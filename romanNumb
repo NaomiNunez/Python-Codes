@@ -1,0 +1,13 @@
+user_number = float(input("Type any number from 1 to 5: "))
+if user_number == 1:
+    print("I")
+elif user_number == 2:
+    print("II")
+elif user_number == 3:
+    print("III")
+elif user_number == 4:
+    print("IV")
+elif user_number == 5:
+    print("V")
+else:
+    print("Error, number is not between 1 and 5!")
