@@ -1,0 +1,5 @@
+user_number = float(input("Type any positive number: "))
+if user_number % 2 == 0:
+    print ("This number is even.")
+else:
+    print("This number is odd.")
