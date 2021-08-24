@@ -1,0 +1,6 @@
+userWord = input("Please enter a word: ")
+firstLetter = userWord[0]
+if firstLetter == ('a' or 'e' or 'i' or 'o' or 'u'):
+    print(userWord + "yay")
+else:
+    print(userWord[1:] + firstLetter + "ay")
