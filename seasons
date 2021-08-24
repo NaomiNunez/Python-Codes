@@ -1,0 +1,21 @@
+def main():
+    season()
+
+def season():
+    month = input("Please enter a month: ")
+    day = input("Please enter a day: ")
+
+    monthsYear = ['January', 'February', 'March', 'April', 'May', 'June',\
+    'July', 'August', 'September', 'October', 'November', 'December']
+
+
+    if month == [2, 3, 4] and day == (1, 32):
+        print("It's Spring!")
+    elif month == [5, 6, 7] and day ==(1, 32):
+        print("It's Summer!")
+    elif month == [8, 9, 10] and day == (1, 31):
+        print("It's Autumn!")
+    else:
+        print("It's Winter!")
+
+main()
