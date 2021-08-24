@@ -1,0 +1,13 @@
+def verses():
+    print("Skip, skip, skip to my Lou,\n" * 3)
+    print("Fly's in the buttermilk, Shoo, fly, shoo\n" * 3)
+    print("There's a little red wagon, Paint it blue\n" * 3)
+    print("Lost my partner, What'll I do?\n" * 3)
+    print("I'll get another one, Prettier than you\n" * 3)
+    print("Can't get a red bird, Jay bird'll do\n" * 3)
+    print("Cat's in the cream jar, Ooh, ooh, ooh\n" * 3)
+    print("Off to Texas, Two by Two\n" * 3)
+    print("Skip to my Lou, my darling.")
+
+
+verses()
