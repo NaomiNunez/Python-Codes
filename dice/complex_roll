@@ -1,0 +1,28 @@
+class ComplexRoll:
+    def __init__(self, die_list, modifier):
+        self.die_list = die_list
+        self.modifier = modifier
+
+    def __str__(self):
+        die_counts = {}
+        for die in die_list:
+            if str(die) in slef.die_counts:
+                die_counts[str(die)] += 1
+            else:
+                die_counts[str(die)] = 1
+        die_count_strings =[]
+        for (die_type, count) in die_counts.items():
+            die_count_strings.append(str(count) + die_type)
+        count_string = '+'.join(die_count_strings)
+        count_string += self.modifier[0] + str(self.modifier[1])
+        return '(' + count_string + ')'
+
+    def roll(self):
+        total = 0
+        for die in self.dice_list:
+            total += die.roll
+        if self.modifier[0] == '+':
+            total += self.modifier[1]
+        elif modifier[0] == '-':
+            total -= self.modifier[1]
+        return total
