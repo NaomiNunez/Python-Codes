@@ -1,0 +1,5 @@
+import random
+die_1 = random.randrange(1, 6)
+die_2 = random.randrange(1, 6)
+dieTotal = die_1 + die_2
+print("You rolled a " + str(die_1) + " and a " + str(die_2) + " for a total of " + str(dieTotal))
