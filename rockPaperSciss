@@ -1,0 +1,11 @@
+import random
+random.choice = ('ROCK', 'PAPER', 'SCISSORS')
+userDecision = input("Do me a favor and choose ROCK, PAPER, or SCISSORS: ")
+if userDecision == 'ROCK' and random.choice == 'SCISSORS':
+    print("You win!")
+elif userDecision == 'PAPER' and random.choice == 'ROCK':
+    print("You win!")
+elif userDecision == 'SCISSORS' and random.choice == 'PAPER':
+    print("You win!")
+else:
+    print("I win!")
