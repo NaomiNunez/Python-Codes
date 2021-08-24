@@ -1,0 +1,6 @@
+minute = 60
+hour = minute * 60
+day = hour * 24
+userTime = input("Please enter a number representing any amount of seconds after midnight: ")
+actualTime = userTime % day
+print(actualTime)
