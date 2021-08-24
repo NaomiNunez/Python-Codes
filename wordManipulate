@@ -1,0 +1,47 @@
+def count_vowels(string):
+    word = list(string.lower())
+    vowels = ['a', 'e', 'i', 'o', 'u', 'y']
+    count = 0
+    for i in word:
+        if i in word:
+            count += 1
+    return count
+
+def remove_vowels(string):
+    word = list(string.lower())
+    vowels = ['a', 'e', 'i', 'o', 'u', 'y']
+    count = 0
+    for i in word:
+        if i in word:
+            word.remove(i)
+    return word
+
+def every_other_character(string):
+    string.lower()
+    word = list(string)
+    result = " "
+    for i in range(0, len(word), 2):
+        result += word[i]
+    return result
+
+def max(numbers):
+    max = numbers[0]
+    for n in numbers:
+        if n > max:
+            max = n
+    return max
+
+def main():
+    print(f"There are {count_vowels('porcupine')} vowels in the word 'porcupine'")
+    # By the way, print can also take multiple arguments.  When you call it this
+    # way, it tranforms all the agruments to strings (if they aren't already)
+    # and then concatenates them together with spaces between them
+    print("With the vowels removed, 'porcupine' is", remove_vowels('porcupine'))
+    print("With every other letter removed, 'porcupine' is",
+          every_other_character('porcupine'))
+    print("The largest number in the list [16, 15, 18, 3, 21, 16, 9, 14, 5] is",
+          max([16, 15, 18, 3, 21, 16, 9, 14, 5]))
+
+
+if __name__ == "__main__":
+    main()
